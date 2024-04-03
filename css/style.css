@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{--main-font:cambria,Cochin;
+      --box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+}
+html{
+   
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+    background-color: rgb(27, 88, 97);
+}
+header{ 
+    height: 100px;
+    display: grid;
+    place-items: center;
+    background-color:rgb(55, 137, 151) ;}
+h1{ 
+    color: white;
+}
+
+.conteiner{
+ display: grid;
+ place-items: center;
+ grid-template-rows:50px;
+ margin: 10%;   
+ background-color: white;
+ box-shadow: var(--box-shadow);
+ height: auto;
+ width: auto;
+}
+h3{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(15, 61, 63); 
+}
+
+
+
+
+
+.list{
+width:450px;
+word-wrap: break-word;
+
+}
+li{
+    overflow: hidden;
+    word-wrap: break-word;
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    border-top: 1px solid rgb(24, 187, 160);
+    padding:10px;
+    font-size: 20px;
+    color:  rgb(20, 87, 76);
+    font-family: var(--main-font);
+  
+   
+}
+
+.text-decoration-line-through {
+    text-decoration: line-through;
+
+    
+  }
+
+  .done{
+    padding-left: 10px;
+  }
+
+
+  .inputText{
+    border-color: rgb(24, 187, 160);
+    width: 400px;
+    height: 40px;
+    margin: 1rem;
+    font-size: 20px;
+font-family: var(--main-font);
+}
+
+  /*boton + */
+  .custom-btn {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-1 {
+    background: rgb(20, 142, 158);
+    background: linear-gradient(0deg, rgb(11, 69, 77) 100%);
+    border: none;
+  }
+  .btn-1:hover {
+     background:rgb(64, 195, 212);
+  background: linear-gradient(0deg, rgb(28, 165, 184) 100%);
+  }
+  
+
+  @media screen and (max-width: 600px){
+    .conteiner{
+      margin: 0%;   
+      width:100%;
+     }
+  
+    .inputText{
+      width: 70%;
+      font-size: 15px;
+  }
+
+  li{
+ width: 90%;
+ margin-left: 5%; 
+}
+.list{width: 100%;}
+
+  }
